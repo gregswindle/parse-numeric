@@ -18,7 +18,6 @@ install:
 script:
 - npm test
 after_script:
-- npm i --save-optional codacy-coverage
 - npm run ci:coverage:codacy
 - npm run ci:coverage:coveralls
 # - FOSSA_API_KEY=$FOSSA_API_KEY fossa analyze

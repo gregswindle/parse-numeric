@@ -153,7 +153,7 @@ See [the contributing file](CONTRIBUTING.md)
 [codacy-coverage-image]:
   https://img.shields.io/codacy/coverage/21f517a2d5bf4304895f40c5cbb596c4.svg?style=flat-square
 [codacy-image]:
-  https://img.shields.io/codacy/grade/21f517a2d5bf4304895f40c5cbb596c4.svg?style=flat-square
+  https://api.codacy.com/project/badge/Grade/76d67d5c0a5c4d21b25f611a896e33cb?style=flat-square
 [codacy-url]:
   https://www.codacy.com/app/greg_7/parse-numeric?utm_source=github.com&utm_medium=referral&utm_content=gregswindle/parse-numeric&utm_campaign=Badge_Grade
 [coveralls-image]:
