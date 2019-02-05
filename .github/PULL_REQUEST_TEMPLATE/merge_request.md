@@ -38,8 +38,8 @@ Closes #ISSUE_NUMBER
 
 ### How to format, lint, and test your changes
 
-Open a Terminal, go to the root directory for <samp>data-loss-signatures</samp>,
-and run:
+Open a Terminal, go to the root directory for <samp>parse-numeric</samp>, and
+run:
 
 ```bash
 $ npm test
@@ -56,48 +56,48 @@ $ npm test
 <!-- SonarCloud badge refs -->
 
 [sonar-alert-status-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=alert_status&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=alert_status&template=FLAT
 [sonar-alert-status-url]:
-  https://sonarcloud.io/dashboard?id=data-loss-signatures-gitlab
+  https://sonarcloud.io/dashboard?id=parse-numeric-gitlab
 [sonar-bugs-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=bugs&template=FLAT
-[sonar-bugs-url]: https://sonarcloud.io/dashboard?id=data-loss-signatures-gitlab
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=bugs&template=FLAT
+[sonar-bugs-url]: https://sonarcloud.io/dashboard?id=parse-numeric-gitlab
 [sonar-code-smells-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=code_smells&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=code_smells&template=FLAT
 [sonar-code-smells-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=code_smells
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=code_smells
 [sonar-coverage-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=coverage&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=coverage&template=FLAT
 [sonar-coverage-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=coverage
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=coverage
 [sonar-duplicated-lines-density-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=duplicated_lines_density&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=duplicated_lines_density&template=FLAT
 [sonar-duplicated-lines-density-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=duplicated_lines_density
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=duplicated_lines_density
 [sonar-ncloc-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=ncloc&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=ncloc&template=FLAT
 [sonar-ncloc-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=ncloc
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=ncloc
 [sonar-reliability-rating-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=reliability_rating&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=reliability_rating&template=FLAT
 [sonar-reliability-rating-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=reliability_rating
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=reliability_rating
 [sonar-security-rating-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=security_rating&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=security_rating&template=FLAT
 [sonar-security-rating-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=security_rating
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=security_rating
 [sonar-sqale-index-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=sqale_index&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=sqale_index&template=FLAT
 [sonar-sqale-index-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=sqale_index
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=sqale_index
 [sonar-sqale-rating-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=sqale_rating&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=sqale_rating&template=FLAT
 [sonar-sqale-rating-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=sqale_rating
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=sqale_rating
 [sonar-vulnerabilities-badge]:
-  https://sonarcloud.io/api/project_badges/measure?project=data-loss-signatures-gitlab&metric=vulnerabilities&template=FLAT
+  https://sonarcloud.io/api/project_badges/measure?project=parse-numeric-gitlab&metric=vulnerabilities&template=FLAT
 [sonar-vulnerabilities-url]:
-  https://sonarcloud.io/component_measures?id=data-loss-signatures-gitlab&metric=vulnerabilities
+  https://sonarcloud.io/component_measures?id=parse-numeric-gitlab&metric=vulnerabilities
 
 <!-- ⛔️ Badge references ⛔️  -->
 
@@ -115,10 +115,10 @@ $ npm test
 [standardjs-logo]: https://cdn.rawgit.com/feross/standard/master/badge.svg
 [standardjs-url]: https://github.com/feross/standard
 [eslint-logo]:
-  https://gitlab.com/gregswindle/data-loss-signatures/raw/master/docs/img/logos/logo-eslint.png
+  https://gitlab.com/gregswindle/parse-numeric/raw/master/docs/img/logos/logo-eslint.png
 [eslint-url]: https://eslint.org/docs/user-guide/getting-started
 [jest-logo]:
-  https://gitlab.com/gregswindle/data-loss-signatures/raw/master/docs/img/logo-jest.png
+  https://gitlab.com/gregswindle/parse-numeric/raw/master/docs/img/logo-jest.png
 [jest-url]: https://facebook.github.io/jest/docs/en/getting-started.html
 
 <!-- ⛔️ Octicon img references ⛔️  -->

@@ -23,13 +23,13 @@
 - [5. Contributing](#5-contributing)
 - [6. License](#6-license)
 
-## 1. Install
+## Install
 
 ```sh
 npm i parse-numeric
 ```
 
-## 2. Usage
+## Usage
 
 Pass any `String` of [valid JavaScript `Number` notation
 ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-numbers-url]
@@ -42,14 +42,14 @@ to return either an **integer** or **floating point** `Number`.
    // 12.3 => 12.3
    ```
 
-2. _Integers:_
+1. _Integers:_
 
    ```js
    parseNumeric("123");
    // 123 => 123
    ```
 
-3. _Binary numbers:_
+1. _Binary numbers:_
 
    ```js
    const parseNumeric = require("parse-numeric");
@@ -58,21 +58,21 @@ to return either an **integer** or **floating point** `Number`.
    // 0b11 => 3
    ```
 
-4. _Octal numbers:_
+1. _Octal numbers:_
 
    ```js
    parseNumeric("0o11");
    // 0o11 => 9
    ```
 
-5. _Hexidecimal numbers:_
+1. _Hexidecimal numbers:_
 
    ```js
    parseNumeric("0x11");
    // 0x11 => 17
    ```
 
-6. _Exponential notation:_
+1. _Exponential notation:_
 
    ```js
    parseNumeric("123e-1");
@@ -96,23 +96,23 @@ parseNumeric(undefined);
 // => undefined
 ```
 
-## 3. API
+## API
 
-### 3.1. `function parseNumeric(value: *): {Number|*}`
+### `function parseNumeric(value: *): {Number|*}`
 
 A function that will return either a `Number` or the original value.
 
-### 3.2. `function parseNumeric.isNumeric(value: *) : {boolean}`
+### `function parseNumeric.isNumeric(value: *) : {boolean}`
 
 A convenience function that evaluates whether a value could be numeric.
 
-## 4. Maintainers
+## Maintainers
 
 ![Maintenance][maintenance-image]
 
 [@gregswindle](https://github.com/gregswindle)
 
-## 5. Contributing
+## Contributing
 
 [![GitHub Contributors](https://img.shields.io/github/contributors/gregswindle/parse-numeric.svg?style=social)]()
 [![GitHub](https://img.shields.io/github/stars/gregswindle/parse-numeric.svg?style=social)](https://github.com/gregswindle/parse-numeric)
@@ -122,9 +122,11 @@ A convenience function that evaluates whether a value could be numeric.
 
 See [the contributing file](CONTRIBUTING.md)
 
-## 6. License
+## License
 
 [MIT](LICENSE) © [Greg Swindle](https://github.com/gregswindle)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=large)](https://app.fossa.io/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric?ref=badge_large)
 
 <!-- Link definition references -->
 
@@ -164,7 +166,7 @@ See [the contributing file](CONTRIBUTING.md)
   https://david-dm.org/gregswindle/parse-numeric.svg?theme=shields.io&style=flat-square
 [daviddm-url]: https://david-dm.org/gregswindle/parse-numeric
 [fossa-image]:
-  https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=shield&style=flat-square
+  https://app.fossa.io/api/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=shield
 [fossa-url]:
   https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Fparse-numeric?ref=badge_shield
 [github-release-image]:
@@ -188,8 +190,8 @@ See [the contributing file](CONTRIBUTING.md)
 [nsp-url]:
   https://nodesecurity.io/orgs/gregswindle/projects/a2aa0184-ae94-4307-8b87-f0e12324368a
 [travis-image]:
-  https://img.shields.io/travis/gregswindle/parse-numeric.svg?branch=master&style=flat-square&label=macOS%20%7C%20ubuntu%20builds&logo=travis
-[travis-url]: https://travis-ci.org/gregswindle/parse-numeric
+  https://img.shields.io/travis/com/gregswindle/parse-numeric.svg?branch=master&style=flat-square&label=macOS%20%7C%20ubuntu%20builds&logo=travis
+[travis-url]: https://travis-ci.com/gregswindle/parse-numeric
 [vulnerabilities-image]:
   https://snyk.io/test/github/gregswindle/parse-numeric/badge.svg?style=flat-square&targetFile=package.json
 [vulnerabilities-url]:
