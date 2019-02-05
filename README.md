@@ -29,27 +29,32 @@
 npm i parse-numeric
 ```
 
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
+
 ## Usage
 
 Pass any `String` of [valid JavaScript `Number` notation
 ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-numbers-url]
 to return either an **integer** or **floating point** `Number`.
 
-1. _Floating point numbers:_
+1. [_Floating point numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-decimal-numbers]
 
    ```js
    parseNumeric("12.3");
    // 12.3 => 12.3
    ```
 
-1. _Integers:_
+1. [_Integers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-decimal-numbers]
 
    ```js
    parseNumeric("123");
    // 123 => 123
    ```
 
-1. _Binary numbers:_
+1. [_Binary numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-binary-numbers]
 
    ```js
    const parseNumeric = require("parse-numeric");
@@ -58,21 +63,24 @@ to return either an **integer** or **floating point** `Number`.
    // 0b11 => 3
    ```
 
-1. _Octal numbers:_
+1. [_Octal numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-octal-numbers]
 
    ```js
    parseNumeric("0o11");
    // 0o11 => 9
    ```
 
-1. _Hexidecimal numbers:_
+1. [_Hexidecimal numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-hexadecimal-numbers]
 
    ```js
    parseNumeric("0x11");
    // 0x11 => 17
    ```
 
-1. _Exponential notation:_
+1. [_Exponential notation:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-exponentiation]
 
    ```js
    parseNumeric("123e-1");
@@ -96,21 +104,27 @@ parseNumeric(undefined);
 // => undefined
 ```
 
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
+
 ## API
 
-### `function parseNumeric(value: *): {Number|*}`
+### `parseNumeric`
 
 A function that will return either a `Number` or the original value.
 
-### `function parseNumeric.isNumeric(value: *) : {boolean}`
+### `parseNumeric.isNumeric`
 
 A convenience function that evaluates whether a value could be numeric.
+
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
 ## Maintainers
 
 ![Maintenance][maintenance-image]
 
 [@gregswindle](https://github.com/gregswindle)
+
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
 ## Contributing
 
@@ -120,13 +134,18 @@ A convenience function that evaluates whether a value could be numeric.
 
 > ![Gratitude][octicon-heart] We gratefully accept Pull Requests.
 
-See [the contributing file](CONTRIBUTING.md)
+Please review [the CONTRIBUTING guidelines](CONTRIBUTING.md) for more
+information.
+
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
 ## License
 
 [MIT](LICENSE) © [Greg Swindle](https://github.com/gregswindle)
 
 [![FOSSA Status](https://app.fossa.io/api/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=large)](https://app.fossa.io/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric?ref=badge_large)
+
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
 <!-- Link definition references -->
 
@@ -177,7 +196,7 @@ See [the contributing file](CONTRIBUTING.md)
   https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT
 [maintenance-image]:
-  https://img.shields.io/maintenance/parse-numeric/2018.svg?style=flat-square
+  https://img.shields.io/maintenance/parse-numeric/2019.svg?style=flat-square
 [notice-url]: https://app.fossa.io/reports/07123904-7d26-40a6-b6af-c74e82a53789
 [npm-downloads-month]:
   https://img.shields.io/npm/dm/parse-numeric.svg?style=social

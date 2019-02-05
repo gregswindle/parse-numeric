@@ -232,7 +232,7 @@
   },
   "repository": "gregswindle/parse-numeric",
   "scripts": {
-    "ci:coverage:codacy": "cat ./coverage/lcov.info | codacy-coverage -l javascript -t $CODACY_PROJECT_TOKEN",
+    "ci:coverage:codacy": "cat ./coverage/lcov.info | codacy-coverage",
     "ci:coverage:coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
