@@ -13,7 +13,6 @@ git:
   depth: 1
 before_install:
 - "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
-- curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash
 install:
 - npm i
 script:
@@ -22,8 +21,8 @@ after_script:
 - npm i --save-optional codacy-coverage
 - npm run ci:coverage:codacy
 - npm run ci:coverage:coveralls
-- FOSSA_API_KEY=$FOSSA_API_KEY fossa analyze
-- fossa test
+# - FOSSA_API_KEY=$FOSSA_API_KEY fossa analyze
+# - fossa test
 jobs:
   include:
   - stage: release
