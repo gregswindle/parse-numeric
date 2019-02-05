@@ -116,7 +116,7 @@ A convenience function that evaluates whether a value could be numeric.
 
 [![GitHub Contributors](https://img.shields.io/github/contributors/gregswindle/parse-numeric.svg?style=social)]()
 [![GitHub](https://img.shields.io/github/stars/gregswindle/parse-numeric.svg?style=social)](https://github.com/gregswindle/parse-numeric)
-[![GitHub](https://img.shields.io/github/forks/gregswindle/parse-numeric.svg?style=social)](https://github.com/gregswindle/parse-numeric/network)
+[![GitHub](https://img.shields.io/github/forks/gregswindle/parse-numeric.svg?style=social)](https://github.com/gregswindle/parse-numeric/network) [![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/parse-numeric.svg)](https://greenkeeper.io/)
 
 > ![Gratitude][octicon-heart] We gratefully accept Pull Requests.
 
