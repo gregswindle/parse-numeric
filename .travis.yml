@@ -1,6 +1,7 @@
 env:
   global:
-    - CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID
+    CC_TEST_REPORTER_ID="$CC_TEST_REPORTER_ID"
+    CC_TEST_REPORTER_TYPE=
 
 language: node_js
 node_js:
@@ -15,16 +16,23 @@ os:
 
 git:
   depth: 1
+
 before_install:
   - "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
+
 install:
   - npm i
+
 before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then CC_REPORTER_TYPE="linux"  ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then CC_REPORTER_TYPE="darwin"   ; fi
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-${CC_REPORTER_TYPE}-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
+
 script:
   - npm test
+
 after_script:
   - npm run ci:coverage:codacy
   - npm run ci:coverage:coveralls
