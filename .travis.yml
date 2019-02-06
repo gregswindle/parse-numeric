@@ -1,3 +1,7 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=$CC_TEST_REPORTER_ID
+
 language: node_js
 node_js:
   - v11
@@ -6,28 +10,34 @@ node_js:
   - v6
 
 os:
-- linux
-- osx
+  - linux
+  - osx
 
 git:
   depth: 1
 before_install:
-- "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
+  - "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
 install:
-- npm i
+  - npm i
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
 script:
-- npm test
+  - npm test
 after_script:
-- npm run ci:coverage:codacy
-- npm run ci:coverage:coveralls
+  - npm run ci:coverage:codacy
+  - npm run ci:coverage:coveralls
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 # - FOSSA_API_KEY=$FOSSA_API_KEY fossa analyze
 # - fossa test
+
 jobs:
   include:
-  - stage: release
-    node_js: lts/*
-    deploy:
-      provider: script
-      skip_cleanup: true
-      script:
-      - npx travis-deploy-once "npx semantic-release"
+    - stage: release
+      node_js: lts/*
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx travis-deploy-once "npx semantic-release"

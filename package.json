@@ -64,6 +64,25 @@
     "prettier": "^1.16.4",
     "semantic-release": "^15.13.3"
   },
+  "greenkeeper": {
+    "commitMessages": {
+      "initialBadge": "docs(status): add greenkeeper badge",
+      "initialDependencies": "build(dependencies): update dependencies",
+      "initialBranches": "chore(permissions): allow greenkeeper branch access",
+      "dependencyUpdate": "chore(dependency): update ${dependency} to v${version}",
+      "devDependencyUpdate": "chore(dependency): update ${dependency} to v${version}",
+      "dependencyPin": "fix(dependency): pin ${dependency} to ${oldVersion}",
+      "devDependencyPin": "fix(dependency): pin ${dependency} to ${oldVersion}"
+    },
+    "prTitles": {
+      "initialPR": "ci(dependency-mgmt): enable Greenkeeper",
+      "initialPrBadge": "ci(dependency-mgmt): enable Greenkeeper",
+      "initialPrBadgeOnly": "ci(dependency-mgmt): add greenkeeper badge",
+      "initialSubgroupPR": "ci(dependency-mgmt): update dependencies for ${group}",
+      "basicPR": "ci(dependency-mgmt): update ${dependency} to latest",
+      "groupPR": "ci(dependency-mgmt): update ${dependency} in group ${group} to latest"
+    }
+  },
   "engines": {
     "npm": ">= 6.0.0"
   },
