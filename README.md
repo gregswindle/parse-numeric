@@ -170,7 +170,7 @@ information.
   https://img.shields.io/appveyor/ci/gregswindle/parse-numeric.svg?style=flat-square&logo=appveyor&label=windows%20build
 [appveyor-url]: https://ci.appveyor.com/project/gregswindle/parse-numeric
 [codacy-coverage-image]:
-  https://img.shields.io/codacy/coverage/21f517a2d5bf4304895f40c5cbb596c4.svg?style=flat-square
+  https://img.shields.io/codacy/coverage/76d67d5c0a5c4d21b25f611a896e33cb.svg?style=flat-square
 [codacy-image]:
   https://api.codacy.com/project/badge/Grade/76d67d5c0a5c4d21b25f611a896e33cb?style=flat-square
 [codacy-url]:
