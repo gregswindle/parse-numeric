@@ -10,6 +10,7 @@
 [![MacOS and Ubuntu build statuses][travis-image]][travis-url]
 [![Windows build status][appveyor-image]][appveyor-url]
 [![Coverage percentage][codacy-coverage-image]][codacy-url]
+[![Code Climate](https://img.shields.io/codeclimate/coverage/github/gregswindle/parse-numeric.svg?style=flat-square)]()
 [![Codacy code quality][codacy-image]][codacy-url]
 
 > Convert numeric strings into Numbers (or return original value).

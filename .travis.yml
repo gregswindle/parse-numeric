@@ -18,16 +18,18 @@ git:
   depth: 1
 
 before_install:
+  # npm
   - "[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest"
+  # FOSSA: install fossa-cli to run Provided Builds
+  # @see https://docs.fossa.com/docs/provided-builds
+  - chmod +x ./.github/ci/legal/fossa-init.sh
 
 install:
   - npm i
 
 before_script:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then CC_REPORTER_TYPE="linux"  ; fi
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then CC_REPORTER_TYPE="darwin"   ; fi
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-${CC_REPORTER_TYPE}-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
+  - ./.github/ci/legal/fossa-init.sh
+  - ./.github/ci/qa/code-climate-init.sh
   - ./cc-test-reporter before-build
 
 script:
@@ -37,8 +39,6 @@ after_script:
   - npm run ci:coverage:codacy
   - npm run ci:coverage:coveralls
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-# - FOSSA_API_KEY=$FOSSA_API_KEY fossa analyze
-# - fossa test
 
 jobs:
   include:
