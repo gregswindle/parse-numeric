@@ -23,6 +23,7 @@ before_install:
   # FOSSA: install fossa-cli to run Provided Builds
   # @see https://docs.fossa.com/docs/provided-builds
   - chmod +x ./.github/ci/legal/fossa-init.sh
+  - chmod +x ./.github/ci/qa/code-climate-init.sh
 
 install:
   - npm i
@@ -30,7 +31,7 @@ install:
 before_script:
   - ./.github/ci/legal/fossa-init.sh
   - ./.github/ci/qa/code-climate-init.sh
-  - ./cc-test-reporter before-build
+  - $TRAVIS_BUILD_DIR/cc-test-reporter before-build || exit 0
 
 script:
   - npm test
@@ -38,7 +39,7 @@ script:
 after_script:
   - npm run ci:coverage:codacy
   - npm run ci:coverage:coveralls
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - $TRAVIS_BUILD_DIR/cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT || exit 0
 
 jobs:
   include:
