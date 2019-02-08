@@ -4,9 +4,10 @@ module.exports = {
     node: true
   },
   extends: [
+    'eslint:all',
     'standard',
-    'plugin:security/recommended',
-    'plugin:unicorn/recommended'
+    'xo',
+    'plugin:security/recommended'
   ],
   plugins: [
     'import',
@@ -14,7 +15,12 @@ module.exports = {
     'prettier',
     'promise',
     'security',
-    'standard',
-    'unicorn'
-  ]
+    'standard'
+  ],
+  rules: {
+    'arrow-parens': 'off',
+    indent: [2, 2, {SwitchCase: 1}],
+    'padding-line-between-statements': 'off',
+    semi: 'off'
+  }
 }

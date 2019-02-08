@@ -10,6 +10,7 @@
 [![MacOS and Ubuntu build statuses][travis-image]][travis-url]
 [![Windows build status][appveyor-image]][appveyor-url]
 [![Coverage percentage][codacy-coverage-image]][codacy-url]
+[![Code Climate](https://img.shields.io/codeclimate/coverage/github/gregswindle/parse-numeric.svg?style=flat-square)]()
 [![Codacy code quality][codacy-image]][codacy-url]
 
 > Convert numeric strings into Numbers (or return original value).
@@ -23,33 +24,38 @@
 - [5. Contributing](#5-contributing)
 - [6. License](#6-license)
 
-## 1. Install
+## Install
 
 ```sh
 npm i parse-numeric
 ```
 
-## 2. Usage
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
+
+## Usage
 
 Pass any `String` of [valid JavaScript `Number` notation
 ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-numbers-url]
 to return either an **integer** or **floating point** `Number`.
 
-1. _Floating point numbers:_
+1. [_Floating point numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-decimal-numbers]
 
    ```js
    parseNumeric("12.3");
    // 12.3 => 12.3
    ```
 
-2. _Integers:_
+1. [_Integers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-decimal-numbers]
 
    ```js
    parseNumeric("123");
    // 123 => 123
    ```
 
-3. _Binary numbers:_
+1. [_Binary numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-binary-numbers]
 
    ```js
    const parseNumeric = require("parse-numeric");
@@ -58,21 +64,24 @@ to return either an **integer** or **floating point** `Number`.
    // 0b11 => 3
    ```
 
-4. _Octal numbers:_
+1. [_Octal numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-octal-numbers]
 
    ```js
    parseNumeric("0o11");
    // 0o11 => 9
    ```
 
-5. _Hexidecimal numbers:_
+1. [_Hexidecimal numbers:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-hexadecimal-numbers]
 
    ```js
    parseNumeric("0x11");
    // 0x11 => 17
    ```
 
-6. _Exponential notation:_
+1. [_Exponential notation:_
+   ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-exponentiation]
 
    ```js
    parseNumeric("123e-1");
@@ -96,23 +105,29 @@ parseNumeric(undefined);
 // => undefined
 ```
 
-## 3. API
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
-### 3.1. `function parseNumeric(value: *): {Number|*}`
+## API
+
+### `parseNumeric`
 
 A function that will return either a `Number` or the original value.
 
-### 3.2. `function parseNumeric.isNumeric(value: *) : {boolean}`
+### `parseNumeric.isNumeric`
 
 A convenience function that evaluates whether a value could be numeric.
 
-## 4. Maintainers
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
+
+## Maintainers
 
 ![Maintenance][maintenance-image]
 
 [@gregswindle](https://github.com/gregswindle)
 
-## 5. Contributing
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
+
+## Contributing
 
 [![GitHub Contributors](https://img.shields.io/github/contributors/gregswindle/parse-numeric.svg?style=social)]()
 [![GitHub](https://img.shields.io/github/stars/gregswindle/parse-numeric.svg?style=social)](https://github.com/gregswindle/parse-numeric)
@@ -120,11 +135,18 @@ A convenience function that evaluates whether a value could be numeric.
 
 > ![Gratitude][octicon-heart] We gratefully accept Pull Requests.
 
-See [the contributing file](CONTRIBUTING.md)
+Please review [the CONTRIBUTING guidelines](CONTRIBUTING.md) for more
+information.
 
-## 6. License
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
+
+## License
 
 [MIT](LICENSE) © [Greg Swindle](https://github.com/gregswindle)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=large)](https://app.fossa.io/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric?ref=badge_large)
+
+<small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
 <!-- Link definition references -->
 
@@ -149,9 +171,9 @@ See [the contributing file](CONTRIBUTING.md)
   https://img.shields.io/appveyor/ci/gregswindle/parse-numeric.svg?style=flat-square&logo=appveyor&label=windows%20build
 [appveyor-url]: https://ci.appveyor.com/project/gregswindle/parse-numeric
 [codacy-coverage-image]:
-  https://img.shields.io/codacy/coverage/21f517a2d5bf4304895f40c5cbb596c4.svg?style=flat-square
+  https://img.shields.io/codacy/coverage/76d67d5c0a5c4d21b25f611a896e33cb.svg?style=flat-square
 [codacy-image]:
-  https://img.shields.io/codacy/grade/21f517a2d5bf4304895f40c5cbb596c4.svg?style=flat-square
+  https://api.codacy.com/project/badge/Grade/76d67d5c0a5c4d21b25f611a896e33cb?style=flat-square
 [codacy-url]:
   https://www.codacy.com/app/greg_7/parse-numeric?utm_source=github.com&utm_medium=referral&utm_content=gregswindle/parse-numeric&utm_campaign=Badge_Grade
 [coveralls-image]:
@@ -164,7 +186,7 @@ See [the contributing file](CONTRIBUTING.md)
   https://david-dm.org/gregswindle/parse-numeric.svg?theme=shields.io&style=flat-square
 [daviddm-url]: https://david-dm.org/gregswindle/parse-numeric
 [fossa-image]:
-  https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=shield&style=flat-square
+  https://app.fossa.io/api/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=shield
 [fossa-url]:
   https://app.fossa.io/projects/git%2Bgithub.com%2Fgregswindle%2Fparse-numeric?ref=badge_shield
 [github-release-image]:
@@ -175,7 +197,7 @@ See [the contributing file](CONTRIBUTING.md)
   https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: http://opensource.org/licenses/MIT
 [maintenance-image]:
-  https://img.shields.io/maintenance/parse-numeric/2018.svg?style=flat-square
+  https://img.shields.io/maintenance/parse-numeric/2019.svg?style=flat-square
 [notice-url]: https://app.fossa.io/reports/07123904-7d26-40a6-b6af-c74e82a53789
 [npm-downloads-month]:
   https://img.shields.io/npm/dm/parse-numeric.svg?style=social
@@ -188,8 +210,8 @@ See [the contributing file](CONTRIBUTING.md)
 [nsp-url]:
   https://nodesecurity.io/orgs/gregswindle/projects/a2aa0184-ae94-4307-8b87-f0e12324368a
 [travis-image]:
-  https://img.shields.io/travis/gregswindle/parse-numeric.svg?branch=master&style=flat-square&label=macOS%20%7C%20ubuntu%20builds&logo=travis
-[travis-url]: https://travis-ci.org/gregswindle/parse-numeric
+  https://img.shields.io/travis/com/gregswindle/parse-numeric.svg?branch=master&style=flat-square&label=macOS%20%7C%20ubuntu%20builds&logo=travis
+[travis-url]: https://travis-ci.com/gregswindle/parse-numeric
 [vulnerabilities-image]:
   https://snyk.io/test/github/gregswindle/parse-numeric/badge.svg?style=flat-square&targetFile=package.json
 [vulnerabilities-url]:
