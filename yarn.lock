@@ -3084,9 +3084,9 @@ jest-jasmine2@^24.0.0:
     jest-util "^24.0.0"
     pretty-format "^24.0.0"
 
-jest-junit@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-6.2.1.tgz#5bf69813d5c2ae583500816eee79a73b90179629"
+jest-junit@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-6.3.0.tgz#99e64ebc54eddcb21238f0cc49f5820c89a8c785"
   dependencies:
     jest-validate "^24.0.0"
     mkdirp "^0.5.1"
@@ -6163,10 +6163,6 @@ shebang-command@^1.2.0:
 shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
-
-shellcheck@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/shellcheck/-/shellcheck-0.2.2.tgz#70624245dba35220575bb67d796cd7b70e9ce888"
 
 shellwords@^0.1.1:
   version "0.1.1"
