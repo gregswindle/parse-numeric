@@ -13,7 +13,7 @@
 [![Code Climate](https://img.shields.io/codeclimate/coverage/github/gregswindle/parse-numeric.svg?style=flat-square)]()
 [![Codacy code quality][codacy-image]][codacy-url]
 
-> Convert numeric strings into Numbers (or return original value).
+> Convert numeric strings into Numbers (or return the original value).
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@
 - [5. Contributing](#5-contributing)
 - [6. License](#6-license)
 
-## Install
+## 1. Install
 
 ```sh
 npm i parse-numeric
@@ -32,7 +32,13 @@ npm i parse-numeric
 
 <small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
-## Usage
+## 2. Usage
+
+<a href="https://runkit.com/gregswindle/5c60901fae871f00140ef424"><img alt="Test it out on RunKit.com" height="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.3.0/svg/beaker.svg" valign="bottom" width="30">
+Test <strong>parse-numeric</strong> in your Web browser on RunKit
+<img alt="Try parse-numeric on RunKit" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.3.0/svg/link-external.svg"></a>.
+
+---
 
 Pass any `String` of [valid JavaScript `Number` notation
 ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-numbers-url]
@@ -58,8 +64,6 @@ to return either an **integer** or **floating point** `Number`.
    ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-binary-numbers]
 
    ```js
-   const parseNumeric = require("parse-numeric");
-
    parseNumeric("0b11");
    // 0b11 => 3
    ```
@@ -107,19 +111,19 @@ parseNumeric(undefined);
 
 <small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
-## API
+## 3. API
 
-### `parseNumeric`
+### 3.1. `parseNumeric`
 
 A function that will return either a `Number` or the original value.
 
-### `parseNumeric.isNumeric`
+### 3.2. `parseNumeric.isNumeric`
 
 A convenience function that evaluates whether a value could be numeric.
 
 <small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
-## Maintainers
+## 4. Maintainers
 
 ![Maintenance][maintenance-image]
 
@@ -127,22 +131,24 @@ A convenience function that evaluates whether a value could be numeric.
 
 <small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
-## Contributing
+## 5. Contributing
 
 [![GitHub Contributors](https://img.shields.io/github/contributors/gregswindle/parse-numeric.svg?style=social)]()
 [![GitHub](https://img.shields.io/github/stars/gregswindle/parse-numeric.svg?style=social)](https://github.com/gregswindle/parse-numeric)
 [![GitHub](https://img.shields.io/github/forks/gregswindle/parse-numeric.svg?style=social)](https://github.com/gregswindle/parse-numeric/network)
+[![Greenkeeper badge](https://badges.greenkeeper.io/gregswindle/parse-numeric.svg?style=flat-square)](https://greenkeeper.io/)
 
 > ![Gratitude][octicon-heart] We gratefully accept Pull Requests.
 
-Please review [the CONTRIBUTING guidelines](CONTRIBUTING.md) for more
-information.
+Please review [the CONTRIBUTING guidelines](CONTRIBUTING.md) and join in.
 
 <small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
-## License
+## 6. License
 
 [MIT](LICENSE) © [Greg Swindle](https://github.com/gregswindle)
+
+> [![Law][octicon-law] View current and **detailed legal NOTICE** report](https://app.fossa.io/attribution/933e5a8d-8842-42f1-8f35-ede2de2bfe69).
 
 [![FOSSA Status](https://app.fossa.io/api/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric.svg?type=large)](https://app.fossa.io/projects/custom%2B804%2Fgithub.com%2Fgregswindle%2Fparse-numeric?ref=badge_large)
 
