@@ -13,7 +13,7 @@
 [![Code Climate](https://img.shields.io/codeclimate/coverage/github/gregswindle/parse-numeric.svg?style=flat-square)]()
 [![Codacy code quality][codacy-image]][codacy-url]
 
-> Convert numeric strings into Numbers (or return original value).
+> Convert numeric strings into Numbers (or return the original value).
 
 ## Table of Contents
 
@@ -33,6 +33,12 @@ npm i parse-numeric
 <small>[![Back to Table of contents][octicon-triangle-up] [toc]](#table-of-contents)</small>
 
 ## Usage
+
+<a href="https://runkit.com/gregswindle/5c60901fae871f00140ef424"><img alt="Test it out on RunKit.com" height="30" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.3.0/svg/beaker.svg" valign="bottom" width="30">
+Test <strong>parse-numeric</strong> in your Web browser on RunKit
+<img alt="Try parse-numeric on RunKit" src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.3.0/svg/link-external.svg"></a>.
+
+---
 
 Pass any `String` of [valid JavaScript `Number` notation
 ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-numbers-url]
@@ -58,8 +64,6 @@ to return either an **integer** or **floating point** `Number`.
    ![Read more on the Mozilla Developer Network][octicon-link-external]][mdn-binary-numbers]
 
    ```js
-   const parseNumeric = require("parse-numeric");
-
    parseNumeric("0b11");
    // 0b11 => 3
    ```
