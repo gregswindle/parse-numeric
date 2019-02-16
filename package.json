@@ -58,12 +58,18 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^1.3.1",
-    "jest": "^24.0.0",
-    "jest-junit": "^6.2.1",
-    "lint-staged": "^8.1.3",
+    "jest": "^24.1.0",
+    "jest-junit": "^6.3.0",
+    "lint-staged": "^8.1.4",
     "prettier": "^1.16.4",
     "semantic-release": "^15.13.3"
   },
+  "engines": {
+    "npm": ">= 6.0.0"
+  },
+  "files": [
+    "lib"
+  ],
   "greenkeeper": {
     "commitMessages": {
       "initialBadge": "docs(status): add greenkeeper badge",
@@ -83,12 +89,6 @@
       "groupPR": "ci(dependency-mgmt): update ${dependency} in group ${group} to latest"
     }
   },
-  "engines": {
-    "npm": ">= 6.0.0"
-  },
-  "files": [
-    "lib"
-  ],
   "homepage": "https://github.com/gregswindle/parse-numeric#readme",
   "husky": {
     "hooks": {
@@ -251,13 +251,17 @@
   },
   "repository": "gregswindle/parse-numeric",
   "scripts": {
+    "ci:coverage": "npm run ci:coverage:codacy && npm run ci:coverage:coveralls",
     "ci:coverage:codacy": "cat ./coverage/lcov.info | codacy-coverage",
     "ci:coverage:coveralls": "cat ./coverage/lcov.info | coveralls",
+    "ci:test": "npm test",
     "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:json:fix": "prettier --write **/*.json",
     "lint:md:fix": "prettier --parser \"markdown\" --prose-wrap \"always\" --write \"**/*.md\"",
+    "postci:test": "npm run ci:coverage",
     "pretest": "npm run lint:js",
+    "security:audit:dependencies": "npm audit",
     "semantic-release": "semantic-release",
     "test": "jest --coverage --verbose"
   }
