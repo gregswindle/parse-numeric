@@ -23,8 +23,7 @@
       "revert",
       "style",
       "test"
-    ],
-    "scope": "\\S+.*"
+    ]
   },
   "contributors": [
     {
