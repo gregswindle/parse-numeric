@@ -1,5 +1,13 @@
 # Changelog
 
+# 1.0.0 (2019-03-06)
+
+
+### Features
+
+* **number-parsing:** parse numeric-like values as numbers ([adf3246](https://github.com/gregswindle/parse-numeric/commit/adf3246)), closes [#1](https://github.com/gregswindle/parse-numeric/issues/1)
+* **parser:** parse values as numbers ([16faf2f](https://github.com/gregswindle/parse-numeric/commit/16faf2f))
+
 All notable changes to **parse-numeric** will be documented in this file.
 
 ## Format

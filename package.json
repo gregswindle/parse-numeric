@@ -1,7 +1,7 @@
 {
   "name": "parse-numeric",
   "description": "Convert numeric strings into Numbers (or return original value).",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": {
     "name": "Greg Swindle",
     "url": "https://github.com/gregswindle"
